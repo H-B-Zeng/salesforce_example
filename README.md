@@ -1,6 +1,23 @@
-# Salesforce DX Project: Next Steps
+Salesforce unit test
+Jest for Salesforce Front-end testing
+| Syntax | Description |
+| --- | ----------- |
+| sfdx force:lightning:lwc:test:setup| 安裝單位測試工具 |
+| npm run test:unit | 進行單位測試 |
+| npm run test:unit:watch | 在開發過程中持續運行測試 |
+| npm run test:unit:coverage|運行測試並顯示代碼覆蓋率 |
+| npm run test:unit:coverage|運行測試並顯示代碼覆蓋率 |
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+.forceignore 需增加忽略的檔案
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+# LWC Jest
+**/__tests__/**
+
+運行測試時，Jest 沒有運行瀏覽器。Jest 使用 jsdom 來提供一個行為類似於瀏覽器的 DOM 或文檔的環境。
+每個測試文件都有一個 jsdom 實例，並且在文件內的測試之間不會重置更改。
+
 
 ## How Do You Plan to Deploy Your Changes?
 
