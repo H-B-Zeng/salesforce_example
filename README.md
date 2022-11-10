@@ -1,5 +1,10 @@
-Salesforce unit test
-Jest for Salesforce Front-end testing
+# LWC Jest
+**/__tests__/**
+
+運行測試時，Jest 沒有運行瀏覽器。Jest 使用 jsdom 來提供一個行為類似於瀏覽器的 DOM 或文檔的環境。
+每個測試文件都有一個 jsdom 實例，並且在文件內的測試之間不會重置更改。
+
+Salesforce unit test,Jest for Front-end testing
 | Syntax | Description |
 | --- | ----------- |
 | sfdx force:lightning:lwc:test:setup| 安裝單位測試工具 |
@@ -12,11 +17,7 @@ Jest for Salesforce Front-end testing
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
-# LWC Jest
-**/__tests__/**
 
-運行測試時，Jest 沒有運行瀏覽器。Jest 使用 jsdom 來提供一個行為類似於瀏覽器的 DOM 或文檔的環境。
-每個測試文件都有一個 jsdom 實例，並且在文件內的測試之間不會重置更改。
 
 
 ## How Do You Plan to Deploy Your Changes?
